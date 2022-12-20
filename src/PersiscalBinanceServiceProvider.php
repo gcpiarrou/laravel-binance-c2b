@@ -1,6 +1,6 @@
 <?php
 
-namespace Persiscal\Binance\Providers;
+namespace Persiscal\Binance;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
