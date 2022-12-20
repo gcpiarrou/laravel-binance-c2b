@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace Persiscal\Binance;
 
 use Exception;
 use Carbon\Carbon;
