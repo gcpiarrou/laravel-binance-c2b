@@ -24,14 +24,12 @@ This integration complies with the [protocol rules](https://developers.binance.c
 To start using the integration in your project you have to:
 1. Install the composer package using ```composer require persiscal/binance```.
 2. Configure your .env with the [.env](/src/.env) variables, replacing the default **BINANCE_KEY** and **BINANCE_SECRET** with your [Binance C2B credentials](https://developers.binance.com/docs/binance-pay/authentication).
-3. Copy the [binance-api](src/config/binance-api.php) file into your config folder.
-4. (Optional) Configure your web routes as in [the web routes](src/routes/web.php).
-5. (Optional) Configure the [binance-api](src/config/binance-api.php) **successRouteName**, **cancelRouteName** and **webhookRouteName** if needed.
-6. (Optional) Copy the [console](src/routes/console.php) commands to test if your project is well configured.
+3. Configure your web routes as in [the web routes](src/routes/web.php).
+4. (Optional) Configure the [binance-api](src/config/binance-api.php) **successRouteName**, **cancelRouteName** and **webhookRouteName** if needed.
 
 ## Testing
 
-This repository contains two commands on [the console routes](.src/routes/console.php).
+This package contains two commands.
 
 The first one will return the balance of the account.
 
