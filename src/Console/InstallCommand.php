@@ -30,10 +30,7 @@ class InstallCommand extends Command
     {
         $this->comment('Publishing Binance Service Provider...');
         $this->callSilent('vendor:publish', ['--tag' => 'persiscal-binance-provider']);
-
-        $this->comment('Publishing Binance Assets...');
-        $this->callSilent('vendor:publish', ['--tag' => 'persiscal-binance-assets']);
-
+        
         $this->comment('Publishing Binance Configuration...');
         $this->callSilent('vendor:publish', ['--tag' => 'persiscal-binance-config']);
 
@@ -43,7 +40,7 @@ class InstallCommand extends Command
     }
 
     /**
-     * Register the Telescope service provider in the application configuration file.
+     * Register the Binance service provider in the application configuration file.
      *
      * @return void
      */
@@ -67,7 +64,7 @@ class InstallCommand extends Command
 
         file_put_contents(config_path('app.php'), str_replace(
             "{$namespace}\\Providers\RouteServiceProvider::class,".$eol,
-            "{$namespace}\\Providers\RouteServiceProvider::class,".$eol."        {$namespace}\PersiscalBinanceServiceProvider::class,".$eol,
+            "{$namespace}\\Providers\RouteServiceProvider::class,".$eol."        {$namespace}\Providers\PersiscalBinanceServiceProvider::class,".$eol,
             $appConfig
         ));
 

@@ -43,7 +43,11 @@ class PersiscalBinanceServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/config/binance-api.php' => config_path('binance-api.php'),
-            ], 'binance-config');
+            ], 'persiscal-binance-config');
+
+            $this->publishes([
+                __DIR__.'/PersiscalBinanceServiceProvider.php' => app_path('Providers/PersiscalBinanceServiceProvider.php'),
+            ], 'persiscal-binance-provider');
 
         }
     }
