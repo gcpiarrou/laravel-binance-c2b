@@ -1,5 +1,5 @@
 {
-    "name": "gastoncampana/laravel-binance-c2b",
+    "name": "gcampana/laravel-binance-c2b",
     "description": "Binance Merchant Acquiring (C2B) integration made for Laravel 8.",
     "license": "MIT",
     "autoload": {
@@ -15,6 +15,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "nesbot/carbon": "3.x-dev"
+        "nesbot/carbon": "^2.64.0"
     }
 }
