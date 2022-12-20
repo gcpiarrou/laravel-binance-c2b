@@ -4,7 +4,7 @@ namespace Persiscal\Binance\Console;
 
 use Illuminate\Console\Command;
 
-class BinanceTestCommand extends Command
+class BinanceGetBalanceCommand extends Command
 {
     /**
      * The name and signature of the console command.

@@ -59,7 +59,7 @@ class PersiscalBinanceServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Console\BinanceTestCommand::class,
+                Console\BinanceGetBalanceCommand::class,
                 Console\BinanceTestOrderCommand::class,
             ]);
         }
