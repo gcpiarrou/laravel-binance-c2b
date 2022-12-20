@@ -19,7 +19,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Telescope\\TelescopeServiceProvider"
+                "Persiscal\\Binance\\PersiscalBinanceServiceProvider"
             ]
         }
     },
