@@ -1,5 +1,5 @@
 {
-    "name": "persiscal/binance-c2b",
+    "name": "persiscal/binance",
     "description": "Binance Merchant Acquiring (C2B) integration made for Laravel 8.",
     "license": "MIT",
     "autoload": {
