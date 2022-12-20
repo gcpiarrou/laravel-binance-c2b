@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('binance/success/{merchantTradeNo}', '\App\Helpers\Binance@successPayment')	->name('binance-successUrl');
-Route::get('binance/cancel/{merchantTradeNo}', 	'\App\Helpers\Binance@cancelPayment')	->name('binance-cancelUrl');
-Route::get('binance/webhook', 					'\App\Helpers\Binance@webhook')			->name('binance-webhookUrl');
+Route::get('binance/success/{merchantTradeNo}', '\Persiscal\Binance\Binance@successPayment')	->name(config('binance-api.urls.successRouteName'));
+Route::get('binance/cancel/{merchantTradeNo}', 	'\Persiscal\Binance\Binance@cancelPayment')	    ->name(config('binance-api.urls.cancelRouteName'));
+Route::get('binance/webhook', 					'\Persiscal\Binance\Binance@webhook')			->name(config('binance-api.urls.webhookRouteName'));
