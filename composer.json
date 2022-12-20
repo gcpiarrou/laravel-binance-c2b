@@ -13,6 +13,14 @@
             "email": "gcampana@persiscal.com"
         }
     ],
+    "scripts": {
+        "post-install-cmd": [
+            "cp persiscal/binance/binance-api.php binance-api.php"
+        ],
+        "post-update-cmd": [
+            "cp persiscal/binance/binance-api.php binance-api.php"
+        ]
+    },
     "minimum-stability": "dev",
     "require": {
         "nesbot/carbon": "^2.64.0"
