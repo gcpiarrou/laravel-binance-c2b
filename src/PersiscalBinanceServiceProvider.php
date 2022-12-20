@@ -14,9 +14,7 @@ class PersiscalBinanceServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerCommands();
         $this->registerPublishing();
-
         $this->registerRoutes();
     }
 
@@ -49,20 +47,6 @@ class PersiscalBinanceServiceProvider extends ServiceProvider
                 __DIR__.'/PersiscalBinanceServiceProvider.php' => app_path('Providers/PersiscalBinanceServiceProvider.php'),
             ], 'persiscal-binance-provider');
 
-        }
-    }
-
-    /**
-     * Register the package's commands.
-     *
-     * @return void
-     */
-    protected function registerCommands()
-    {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Console\InstallCommand::class,
-            ]);
         }
     }
 
