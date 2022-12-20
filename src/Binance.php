@@ -9,7 +9,7 @@ use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
-use Persiscal\Binance\Traits\HandlesResponseErrors;
+use Traits\HandlesResponseErrors;
 
 class Binance
 {
