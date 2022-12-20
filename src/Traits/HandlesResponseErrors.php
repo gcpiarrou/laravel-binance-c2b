@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Traits;
+namespace Persiscal\Binance\Traits;
 
 trait HandlesResponseErrors
 {
