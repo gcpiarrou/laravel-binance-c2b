@@ -11,7 +11,7 @@ class BinanceTestCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'binance:test';
+    protected $signature = 'binance:get-balance';
 
     /**
      * The console command description.
