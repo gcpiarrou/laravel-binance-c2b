@@ -26,9 +26,12 @@ class Binance
     /**
      * Constructor for Binance.
      *
-     * @param string $api_key       API key
-     * @param string $api_secret    API secret
-     * @param string $api_url       API base URL (see config for example)
+     * @param string $api_key               API key
+     * @param string $api_secret            API secret
+     * @param string $api_url               API base URL (see config for example)
+     * @param string $successUrlRouteName   Success endpoint route name
+     * @param string $cancelUrlRouteName    Cancel or failure endpoint route name
+     * @param string $webhookRouteName      Webhook endpoint route name
      */
     public function __construct($api_key = null, $api_secret = null, $api_url = null, $successUrlRouteName = null, $cancelUrlRouteName = null, $webhookRouteName = null)
     {
